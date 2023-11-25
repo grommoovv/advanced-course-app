@@ -1,0 +1,37 @@
+.code {
+    position: relative;
+    overflow: auto;
+    border: 1px solid var(--primary-color);
+    padding: 20px;
+    background-color: var(--code-bg-color);
+}
+
+.copyBtn,
+.successIcon {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.copyBtn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.successIcon {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.code.copied {
+    .copyBtn {
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .successIcon {
+        opacity: 1;
+        visibility: visible;
+    }
+}

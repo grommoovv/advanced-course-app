@@ -1,0 +1,40 @@
+.Button {
+    margin: 0;
+    padding: 8px 20px;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.clear {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.primary {
+    border-radius: var(--radii);
+    color: var(--inverted-primary-color);
+    background-color: var(--inverted-bg-color);
+}
+
+.blue {
+    border-radius: var(--radii);
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.size_s {
+    font: var(--font-s);
+}
+
+.size_m {
+    font: var(--font-m);
+}
+
+.size_l {
+    font: var(--font-l);
+}
+
+.disabled {
+    opacity: 0.3;
+}

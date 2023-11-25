@@ -1,0 +1,28 @@
+.dropdown {
+    position: relative;
+    width: fit-content;
+}
+
+.menu {
+    position: absolute;
+    z-index: var(--popup-z-index);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 8px;
+    min-width: 127px;
+}
+
+.item {
+    padding: 10px 25px;
+    width: 100%;
+    color: var(--primary-color);
+    background-color: var(--card-bg);
+    transition: 0.2s color ease-in-out, 0.2s background-color ease-in-out;
+    cursor: pointer;
+}
+
+.item.active {
+    color: var(--inverted-primary-color);
+    background-color: var(--inverted-bg-color);
+}

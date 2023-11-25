@@ -1,0 +1,30 @@
+.link {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    
+    @media (any-hover: hover) {
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+.white {
+    color: var(--white);
+}
+
+.primary {
+    color: var(--primary-color);
+}
+
+.size_s {
+    font: var(--font-s);
+}
+
+.size_m {
+    font: var(--font-m);
+}
+
+.size_l {
+    font: var(--font-l);
+}
