@@ -1,0 +1,1170 @@
+{
+    "notifications": [
+        {
+            "id": "1",
+            "title": "Уведомление 1",
+            "description": "Произошло какое то событие",
+            "userId": "1"
+        },
+        {
+            "id": "2",
+            "title": "Уведомление 2",
+            "description": "Произошло какое то событие админ панель",
+            "userId": "1",
+            "href": "http://localhost:3000/admin"
+        },
+        {
+            "id": "3",
+            "title": "Уведомление 3",
+            "description": "Произошло какое то событие панели админа",
+            "userId": "1",
+            "href": "http://localhost:3000/admin"
+        },
+        {
+            "id": "4",
+            "title": "Уведомление 4",
+            "description": "Произошло какое то событие профиля",
+            "userId": "1",
+            "href": "http://localhost:3000/profile"
+        }
+    ],
+    "posts": [
+        {
+            "id": "1",
+            "title": "json-server",
+            "userId": "1"
+        },
+        {
+            "id": "2",
+            "title": "json-server",
+            "userId": "2"
+        }
+    ],
+    "articles": [
+        {
+            "id": "1",
+            "title": "JavaScript новости",
+            "subtitle": "Что нового в JS за 2022 год?",
+            "img": "https://www.itpt.co.uk/wp-content/uploads/2022/11/Javascript-Image.png",
+            "views": 2002,
+            "createdAt": "29.09.2022",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+                        "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+                        "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+                    ]
+                },
+                {
+                    "id": "4",
+                    "type": "CODE",
+                    "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;"
+                },
+                {
+                    "id": "5",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+                        "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+                    ]
+                },
+                {
+                    "id": "2",
+                    "type": "IMAGE",
+                    "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+                    "title": "Рисунок 1 - скриншот сайта"
+                },
+                {
+                    "id": "3",
+                    "type": "CODE",
+                    "code": "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);"
+                },
+                {
+                    "id": "7",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+                        "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+                    ]
+                },
+                {
+                    "id": "8",
+                    "type": "IMAGE",
+                    "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+                    "title": "Рисунок 1 - скриншот сайта"
+                },
+                {
+                    "id": "9",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "title": "React новости",
+            "subtitle": "React выдал базу...",
+            "img": "https://200lab-blog.imgix.net/2021/07/1_h5UGPzaL1E4dIy_JWDrsAw.png",
+            "views": 3125,
+            "createdAt": "28.01.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+                        "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+                        "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+                    ]
+                },
+                {
+                    "id": "4",
+                    "type": "CODE",
+                    "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;"
+                },
+                {
+                    "id": "5",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+                        "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+                    ]
+                },
+                {
+                    "id": "2",
+                    "type": "IMAGE",
+                    "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+                    "title": "Рисунок 1 - скриншот сайта"
+                },
+                {
+                    "id": "3",
+                    "type": "CODE",
+                    "code": "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);"
+                },
+                {
+                    "id": "7",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+                        "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+                    ]
+                },
+                {
+                    "id": "8",
+                    "type": "IMAGE",
+                    "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+                    "title": "Рисунок 1 - скриншот сайта"
+                },
+                {
+                    "id": "9",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Fronted новости",
+            "subtitle": "Frontend разработчики отказались работать за еду",
+            "img": "https://media.tproger.ru/uploads/2020/11/frontend-development-cover.png",
+            "views": 1472,
+            "createdAt": "15.02.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+                        "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+                        "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+                    ]
+                },
+                {
+                    "id": "4",
+                    "type": "CODE",
+                    "code": "<!DOCTYPE html>\n<html>\n  <body>\n    <p id=\"hello\"></p>\n\n    <script>\n      document.getElementById(\"hello\").innerHTML = \"Hello, world!\";\n    </script>\n  </body>\n</html>;"
+                },
+                {
+                    "id": "5",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+                        "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+                    ]
+                },
+                {
+                    "id": "2",
+                    "type": "IMAGE",
+                    "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+                    "title": "Рисунок 1 - скриншот сайта"
+                },
+                {
+                    "id": "3",
+                    "type": "CODE",
+                    "code": "const path = require('path');\n\nconst server = jsonServer.create();\n\nconst router = jsonServer.router(path.resolve(__dirname, 'db.json'));\n\nserver.use(jsonServer.defaults({}));\nserver.use(jsonServer.bodyParser);"
+                },
+                {
+                    "id": "7",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+                        "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+                    ]
+                },
+                {
+                    "id": "8",
+                    "type": "IMAGE",
+                    "src": "https://hsto.org/r/w1560/getpro/habr/post_images/d56/a02/ffc/d56a02ffc62949b42904ca00c63d8cc1.png",
+                    "title": "Рисунок 1 - скриншот сайта"
+                },
+                {
+                    "id": "9",
+                    "type": "TEXT",
+                    "title": "Заголовок этого блока",
+                    "paragraphs": [
+                        "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы."
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Lorem ipsum dolor. 01",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 1000,
+            "createdAt": "01.01.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Lorem ipsum dolor. 02",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 900,
+            "createdAt": "02.01.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Lorem ipsum dolor. 03",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 800,
+            "createdAt": "03.01.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Lorem ipsum dolor. 04",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 700,
+            "createdAt": "04.01.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "8",
+            "title": "Lorem ipsum dolor. 05",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 600,
+            "createdAt": "05.01.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "9",
+            "title": "Lorem ipsum dolor. 06",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 500,
+            "createdAt": "06.01.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "10",
+            "title": "Lorem ipsum dolor. 07",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 400,
+            "createdAt": "07.01.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "11",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "12",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "13",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "14",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "15",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "16",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "17",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "18",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["ECONOMICS"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "19",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["SCIENCE"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "20",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "21",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "22",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "23",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "24",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "25",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "26",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "27",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "28",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "29",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "30",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "31",
+            "title": "Lorem ipsum dolor.",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 0,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [
+                {
+                    "id": "1",
+                    "type": "TEXT",
+                    "title": "Lorem ipsum dolor.",
+                    "paragraphs": [
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!",
+                        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, accusamus alias aliquid atque consequatur deleniti, dolores, facere fugit id laboriosam laudantium magnam magni nobis officia placeat quae rem suscipit veritatis!"
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Testing Article",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 1,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [],
+            "id": "G0VCUje"
+        },
+        {
+            "title": "Testing Article",
+            "subtitle": "Lorem ipsum dolor sit amet.",
+            "img": "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+            "views": 1,
+            "createdAt": "11.11.2023",
+            "userId": "1",
+            "type": ["IT"],
+            "blocks": [],
+            "id": "G1yRN-G"
+        }
+    ],
+    "comments": [
+        {
+            "id": "1",
+            "text": "some comment 1",
+            "articleId": "1",
+            "userId": "1"
+        },
+        {
+            "id": "2",
+            "text": "some comment 2",
+            "articleId": "1",
+            "userId": "1"
+        },
+        {
+            "id": "3",
+            "text": "some comment 3",
+            "articleId": "1",
+            "userId": "1"
+        },
+        {
+            "articleId": "1",
+            "userId": "1",
+            "text": "new comment from admin",
+            "id": "_QDBo7P"
+        },
+        {
+            "articleId": "1",
+            "userId": "2",
+            "text": "new comment from user",
+            "id": "WKmNQkq"
+        },
+        {
+            "articleId": "1",
+            "userId": "2",
+            "text": "hi article",
+            "id": "NOVR6b1"
+        },
+        {
+            "articleId": "1",
+            "userId": "2",
+            "text": "1 more comment",
+            "id": "NN6BvJb"
+        },
+        {
+            "articleId": "1",
+            "userId": "1",
+            "text": "asd",
+            "id": "qf7WF1i"
+        },
+        {
+            "articleId": "1",
+            "userId": "1",
+            "text": "yo",
+            "id": "_TKYk6B"
+        },
+        {
+            "articleId": "2",
+            "userId": "1",
+            "text": "Reaaaact!",
+            "id": "ws4lFNw"
+        },
+        {
+            "articleId": "3",
+            "userId": "1",
+            "text": "some comment",
+            "id": "zuyzfhf"
+        },
+        {
+            "articleId": "5",
+            "userId": "1",
+            "text": "asd",
+            "id": "1Q4JPHj"
+        },
+        {
+            "articleId": "18",
+            "userId": "1",
+            "text": "asd",
+            "id": "Ssy4T11"
+        },
+        {
+            "articleId": "11",
+            "userId": "1",
+            "text": "commment",
+            "id": "qWJq5iH"
+        },
+        {
+            "articleId": "11",
+            "userId": "1",
+            "text": "one more",
+            "id": "mPvzGgQ"
+        },
+        {
+            "articleId": "2",
+            "userId": "1",
+            "text": "New",
+            "id": "ZEHDNTn"
+        },
+        {
+            "articleId": "G0VCUje",
+            "userId": "test",
+            "text": "text",
+            "id": "wl61kOT"
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "username": "admin",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "avatar": "https://avatars.githubusercontent.com/u/109303573?v=4"
+        },
+        {
+            "id": "2",
+            "username": "user",
+            "password": "123",
+            "roles": ["USER"],
+            "avatar": "https://avatars.githubusercontent.com/u/91557152?v=4"
+        },
+        {
+            "id": "3",
+            "username": "manager",
+            "password": "123",
+            "roles": ["MANAGER"],
+            "avatar": "https://avatars.githubusercontent.com/u/100791507?v=4"
+        },
+        {
+            "id": "test",
+            "username": "testuser",
+            "password": "123",
+            "roles": ["ADMIN"],
+            "avatar": "https://avatars.githubusercontent.com/u/109303573?v=4"
+        }
+    ],
+    "profile": [
+        {
+            "id": "1",
+            "firstname": "Evgenii",
+            "lastname": "TSovich",
+            "age": 23,
+            "currency": "EUR",
+            "country": "Russia",
+            "city": "Moscow",
+            "username": "admin",
+            "avatar": "https://avatars.githubusercontent.com/u/109303573?v=4"
+        },
+        {
+            "id": "2",
+            "firstname": "SomeName",
+            "lastname": "SomeLastName",
+            "age": 20,
+            "currency": "RUB",
+            "country": "Russia",
+            "city": "Moscow",
+            "username": "user",
+            "avatar": "https://avatars.githubusercontent.com/u/91557152?v=4"
+        },
+        {
+            "id": "test",
+            "firstname": "Harry",
+            "lastname": "Potter",
+            "age": 21,
+            "currency": "RUB",
+            "country": "Russia",
+            "city": "Moscow",
+            "username": "testuser",
+            "avatar": "https://avatars.githubusercontent.com/u/109303573?v=4"
+        }
+    ],
+    "article-ratings": [
+        {
+            "id": "1",
+            "rate": 4,
+            "feedback": "Хорошая статья",
+            "userId": "1",
+            "articleId": "1"
+        },
+        {
+            "id": "2",
+            "rate": 5,
+            "feedback": "Информативная статья",
+            "userId": "1",
+            "articleId": "2"
+        },
+        {
+            "userId": "1",
+            "articleId": "3",
+            "rate": 5,
+            "id": "piYOPIs"
+        },
+        {
+            "userId": "1",
+            "articleId": "4",
+            "rate": 3,
+            "feedback": "Fake",
+            "id": "NEPe9Ez"
+        },
+        {
+            "userId": "1",
+            "articleId": "10",
+            "rate": 4,
+            "id": "gw8vdJP"
+        },
+        {
+            "userId": "1",
+            "articleId": "8",
+            "rate": 3,
+            "id": "5LRnl2p"
+        },
+        {
+            "userId": "1",
+            "articleId": "8",
+            "rate": 3,
+            "id": "e9YdLYW"
+        },
+        {
+            "userId": "1",
+            "articleId": "8",
+            "rate": 3,
+            "id": "aVLvWZF"
+        },
+        {
+            "userId": "1",
+            "articleId": "8",
+            "rate": 3,
+            "id": "MSyPzeN"
+        },
+        {
+            "userId": "1",
+            "articleId": "8",
+            "rate": 3,
+            "id": "6xFoXz_"
+        },
+        {
+            "userId": "1",
+            "articleId": "8",
+            "rate": 3,
+            "id": "HWQfCO0"
+        },
+        {
+            "userId": "1",
+            "articleId": "8",
+            "rate": 3,
+            "id": "hH0zt-x"
+        },
+        {
+            "userId": "1",
+            "articleId": "8",
+            "rate": 3,
+            "id": "EoC7o3p"
+        },
+        {
+            "userId": "1",
+            "articleId": "8",
+            "rate": 3,
+            "id": "UCuKig5"
+        },
+        {
+            "userId": "1",
+            "articleId": "6",
+            "rate": 5,
+            "id": "y0anPdP"
+        },
+        {
+            "userId": "1",
+            "articleId": "15",
+            "rate": 5,
+            "feedback": "good",
+            "id": "un4rZpo"
+        },
+        {
+            "userId": "1",
+            "articleId": "15",
+            "rate": 2,
+            "id": "AmHh1wM"
+        }
+    ]
+}
