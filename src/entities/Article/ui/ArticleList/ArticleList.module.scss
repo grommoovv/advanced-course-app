@@ -1,0 +1,17 @@
+.articleList.SMALL {
+    display: grid;
+    justify-content: center;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, 200px);
+}
+
+.articleList.BIG {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+}
+
+.articleList.notFound {
+    display: grid;
+    place-items: center;
+}

@@ -1,0 +1,13 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    padding-right: 10px;
+    min-width: 230px;
+    max-height: 350px;
+}
+
+.list li:not(:last-child) {
+    border-bottom: 1px solid #7d7d7d;
+}

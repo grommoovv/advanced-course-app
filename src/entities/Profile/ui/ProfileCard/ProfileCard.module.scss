@@ -1,0 +1,24 @@
+.profileCard {
+    border: 2px solid var(--inverted-bg-color);
+    padding: 20px;
+}
+
+.loading,
+.error {
+    display: grid;
+    place-items: center;
+}
+
+.error {
+    gap: 30px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.editing {
+    border-color: var(--blue);
+}

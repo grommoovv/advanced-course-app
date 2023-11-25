@@ -1,0 +1,25 @@
+.articleDetails {
+    padding-bottom: 30px;
+    min-height: 100%;
+}
+
+.avatar {
+    margin: 0 auto 30px;
+}
+
+.blockList {
+    margin-bottom: 20px;
+}
+
+.skeletons,
+.blockList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.articleInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
