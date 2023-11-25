@@ -1,0 +1,39 @@
+@import 'nullstyle';
+@import 'variables/global';
+@import 'themes/light';
+@import 'themes/dark';
+@import 'themes/orange';
+
+body {
+    font: var(--font-m);
+    color: var(--primary-color);
+}
+
+.app {
+    min-height: 100vh;
+    background-color: var(--bg-color);
+}
+
+.content-page {
+    display: flex;
+    height: calc(100vh - var(--header-height));
+}
+
+main {
+    flex-grow: 1;
+    width: 100%;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--card-bg);
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: var(--inverted-primary-color);
+}

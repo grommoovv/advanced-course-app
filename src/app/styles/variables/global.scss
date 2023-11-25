@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap');
+
+:root {
+    --font-family-main: 'Nunito Sans', sans-serif;
+    --font-size-s: 12px;
+    --font-line-s: 20px;
+    --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+    --font-size-m: 16px;
+    --font-line-m: 24px;
+    --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+    --font-size-l: 24px;
+    --font-line-l: 32px;
+    --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+    --font-size-xl: 32px;
+    --font-line-xl: 40px;
+    --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+    
+    // Размеры
+    --header-height: 70px;
+    --sidebar-width: 250px;
+    --sidebar-width-collapsed: 80px;
+    --radii: 12px;
+    
+    // z index
+    --modal-z-index: 3;
+    --popup-z-index: 2;
+    
+    // Цвета
+    --white: #fff;
+    --black: #000;
+    --blue: #4f7faf;
+    --overlay-color: rgb(0 0 0 / 60%);
+    --error-primary-color: #ff6347ff;
+    --success--primary-color: #32c732;
+}

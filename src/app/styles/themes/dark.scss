@@ -1,0 +1,25 @@
+body[data-theme='dark'],
+body.dark {
+    --bg-color: #202c37;
+    --inverted-bg-color: #f4f4f4;
+    --bg-secondary-color: #2b3945;
+    --inverted-bg-secondary-color: #4f7faf;
+    --primary-color: #fefefe;
+    --secondary-color: #eaeaea;
+    --inverted-primary-color: #111517;
+    --shadow: rgb(245 245 245 / 20%) 0 0 8px;
+    --shaodw-color: rgb(245 245 245 / 20%);
+    
+    // skeleton
+    --skeleton-color: #696969;
+    --skeleton-shadow: rgb(255 255 255 / 20%);
+    
+    // code
+    --code-bg-color: #475462;
+    
+    // card
+    --card-bg: #2f404f;
+    
+    // listbox
+    --listbox-bg: #2f404f;
+}
