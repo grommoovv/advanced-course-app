@@ -1,0 +1,31 @@
+.link {
+    position: relative;
+    display: block;
+    padding-left: 50px;
+    width: fit-content;
+}
+
+.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    fill: var(--white);
+}
+
+.title {
+    white-space: nowrap;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.link.collapsed {
+    .title {
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .link {
+        width: 30px;
+    }
+}
